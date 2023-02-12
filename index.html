@@ -14,7 +14,9 @@
 </head>
 <body>
 
-<nav class="navbar">
+
+<!-- NAVBAR FOR MOBILE -->
+<nav class="navbar nav-mobile">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img src="assets/images/logo.svg"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
@@ -46,15 +48,39 @@
   </div>
 </nav>
 
-<div class="wrapper">
+<!-- NAVBAR FOR DESKTOP -->
+<nav class="navbar-desktop">
+  <div class="navbar-logo"><a class="navbar-brand" href="#"><img src="assets/images/logo.svg"></a></div>
+  <div class="desktop-navbar-links">
+    <ul>
+      <li class="nav-item">
+         <a class="nav-link active" aria-current="page" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">New</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Popular</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Trending</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Categories</a>
+      </li>
+  </ul>
+  </div>
+</nav>
 
-  <div class="hero">
-    <img src="assets/images/image-web-3-mobile.jpg" alt="cover-picture" class="heroImage">
-    <h1>The Bright Future of Web 3.0?</h1>
+<div class="wrapper">
+    <img src="assets/images/image-web-3-desktop.jpg" alt="cover-picture-desktop" class="heroImage2">
+    <img src="assets/images/image-web-3-mobile.jpg" alt="cover-picture-mobile" class="heroImage1">
+    <div class="hero-h1"><h1>The Bright Future of Web 3.0?</h1></div>
+    <div class="grid-hero-text">
     <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
     But is it really fulfilling its promise?</p>
     <button class="btn heroButton">READ MORE</button>
-  </div>
+    </div>
 
   <div class="new">
     <h2>New</h2>
@@ -68,8 +94,7 @@
     <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
   </div>
 
-  <div class="bottom">
-    <div class="section">
+    <div class="section s1">
       <img src="assets/images/image-retro-pcs.jpg" alt="retro-PC-picture">
       <div class="sectionText">
         <h4>01</h4>
@@ -78,7 +103,7 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section s2">
       <img src="assets/images/image-top-laptops.jpg" alt="keyboard-picture">
       <div class="sectionText">
         <h4>02</h4>
@@ -87,7 +112,7 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section s3">
       <img src="assets/images/image-gaming-growth.jpg" alt="controller-picture">
       <div class="sectionText">
         <h4>03</h4>
@@ -95,7 +120,6 @@
         <p>How the pandemic has sparked fresh opportunities.</p>
       </div>
     </div>
-  </div>
 
 </div>
   
@@ -106,6 +130,5 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

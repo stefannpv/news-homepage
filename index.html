@@ -3,58 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
   
   <title>Frontend Mentor | News homepage</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
-
-  The Bright Future of Web 3.0?
-
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<nav class="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="assets/images/logo.svg"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+      <span><img src="assets/images/icon-menu.svg"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="CloseButtonDiv"><button type="button" class="btn-close btn-close-black" id="closeButton" data-bs-dismiss="offcanvas" aria-label="Close"></button></div>
+      <!-- <img src="assets/images/icon-menu-close.svg"> -->
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">New</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Popular</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Categories</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
+</nav>
+
+<div class="wrapper">
+
+  <div class="hero">
+    <img src="assets/images/image-web-3-mobile.jpg" alt="cover-picture" class="heroImage">
+    <h1>The Bright Future of Web 3.0?</h1>
+    <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+    But is it really fulfilling its promise?</p>
+    <button class="btn heroButton">READ MORE</button>
+  </div>
+
+  <div class="new">
+    <h2>New</h2>
+    <h3>Hydrogen VS Electric Cars</h3>
+    <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+    <hr>
+    <h3>The Downsides of AI Artistry</h3>
+    <p>What are the possible adverse effects of on-demand AI image generation?</p>
+    <hr>
+    <h3>Is VC Funding Drying Up?</h3>
+    <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+  </div>
+
+  <div class="bottom">
+    <div class="section">
+      <img src="assets/images/image-retro-pcs.jpg" alt="retro-PC-picture">
+      <div class="sectionText">
+        <h4>01</h4>
+        <h5>Reviving Retro PCs</h5>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <img src="assets/images/image-top-laptops.jpg" alt="keyboard-picture">
+      <div class="sectionText">
+        <h4>02</h4>
+        <h5>Top 10 Laptops of 2022</h5>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <img src="assets/images/image-gaming-growth.jpg" alt="controller-picture">
+      <div class="sectionText">
+        <h4>03</h4>
+        <h5>The Growth of Gaming</h5>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+  
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by Stefan
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
